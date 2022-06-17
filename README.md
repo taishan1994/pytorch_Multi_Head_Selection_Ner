@@ -1,4 +1,11 @@
 # pytorch_Multi_Head_Selection_Ner
+延申：
+- 一种级联Bert用于命名实体识别，解决标签过多问题：https://github.com/taishan1994/pytorch_Cascade_Bert_Ner
+- 中文命名实体识别最新进展：https://github.com/taishan1994/awesome-chinese-ner
+- 信息抽取三剑客：实体抽取、关系抽取、事件抽取：https://github.com/taishan1994/chinese_information_extraction
+- 一种基于机器阅读理解的命名实体识别：https://github.com/taishan1994/BERT_MRC_NER_chinese
+- W2NER：命名实体识别最新sota：https://github.com/taishan1994/W2NER_predict
+****
 基于pytorch的多头选择方法进行中文命名实体识别。
 
 在多头选择的基础上，设计了一个额外的任务：判断是否存在某类型的实体，即一个多标签分类的任务。目前可运行的是cner数据，其它数据可参照模板进行修改，具体步骤如下：
