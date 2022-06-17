@@ -1,0 +1,2 @@
+# pytorch_Multi_Head_Selection_Ner
+基于pytorch的多头选择方法进行中文命名实体识别。
