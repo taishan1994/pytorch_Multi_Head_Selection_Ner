@@ -1,5 +1,6 @@
 # pytorch_Multi_Head_Selection_Ner
 延申：
+- 一种one vs rest方法进行命名实体识别：https://github.com/taishan1994/pytorch_OneVersusRest_Ner
 - 一种级联Bert用于命名实体识别，解决标签过多问题：https://github.com/taishan1994/pytorch_Cascade_Bert_Ner
 - 中文命名实体识别最新进展：https://github.com/taishan1994/awesome-chinese-ner
 - 信息抽取三剑客：实体抽取、关系抽取、事件抽取：https://github.com/taishan1994/chinese_information_extraction
