@@ -1,6 +1,6 @@
 import torch
 from torch.utils.data import Dataset, DataLoader
-from preprocess import BertFeature
+from preprocess_mhs import BertFeature
 from utils import commonUtils
 
 
