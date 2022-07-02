@@ -6,7 +6,7 @@ from utils import commonUtils, metricsUtils, decodeUtils, trainUtils
 import config
 import dataset_mhs
 # 要显示传入BertFeature
-from preprocess import BertFeature
+from preprocess_mhs import BertFeature
 import bert_ner_model_mhs
 from torch.utils.data import DataLoader, RandomSampler
 from transformers import BertTokenizer
