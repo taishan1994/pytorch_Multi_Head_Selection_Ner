@@ -1,15 +1,5 @@
 # pytorch_Multi_Head_Selection_Ner
-延申：
-- 一种基于globalpointer的命名实体识别：https://github.com/taishan1994/pytorch_GlobalPointer_Ner
-- 一种基于TPLinker_plus的命名实体识别：https://github.com/taishan1994/pytorch_TPLinker_Plus_Ner
-- 一种基于bert_bilstm_crf的命名实体识别：https://github.com/taishan1994/pytorch_bert_bilstm_crf_ner
-- 一种one vs rest方法进行命名实体识别：https://github.com/taishan1994/pytorch_OneVersusRest_Ner
-- 一种级联Bert用于命名实体识别，解决标签过多问题：https://github.com/taishan1994/pytorch_Cascade_Bert_Ner
-- 中文命名实体识别最新进展：https://github.com/taishan1994/awesome-chinese-ner
-- 信息抽取三剑客：实体抽取、关系抽取、事件抽取：https://github.com/taishan1994/chinese_information_extraction
-- 一种基于机器阅读理解的命名实体识别：https://github.com/taishan1994/BERT_MRC_NER_chinese
-- W2NER：命名实体识别最新sota：https://github.com/taishan1994/W2NER_predict
-****
+
 基于pytorch的多头选择方法进行中文命名实体识别。
 
 在多头选择的基础上，设计了一个额外的任务：判断是否存在某类型的实体，即一个多标签分类的任务。目前可运行的是cner数据，其它数据可参照模板进行修改，具体步骤如下：
@@ -111,3 +101,15 @@ Use single gpu in: ['0']
 会提取到相对于较长的实体，这种解决方法是引入相对位置编码，如苏剑林的旋转位置编码。这里初步的解决方法是：对于头部重合的，过滤掉较长的实体；对于尾部重合的，过滤掉较短的实体。
 
 **延申**：这里是得到一个[batchsize, seq_len, seq_len, pair_tags]对每一个字符对直接进行判断是哪一种实体，还有一种思路是得到一个[batchsize, num_tags,seq_len,seq_len]，这一种是对每一个字符对进行二分类，而标签是从第二位获取，可参考苏剑林的GlobalPoint进行命名实体识别。
+
+# 延申
+- 一种基于globalpointer的命名实体识别：https://github.com/taishan1994/pytorch_GlobalPointer_Ner
+- 一种基于TPLinker_plus的命名实体识别：https://github.com/taishan1994/pytorch_TPLinker_Plus_Ner
+- 一种基于bert_bilstm_crf的命名实体识别：https://github.com/taishan1994/pytorch_bert_bilstm_crf_ner
+- 一种one vs rest方法进行命名实体识别：https://github.com/taishan1994/pytorch_OneVersusRest_Ner
+- 一种级联Bert用于命名实体识别，解决标签过多问题：https://github.com/taishan1994/pytorch_Cascade_Bert_Ner
+- 中文命名实体识别最新进展：https://github.com/taishan1994/awesome-chinese-ner
+- 信息抽取三剑客：实体抽取、关系抽取、事件抽取：https://github.com/taishan1994/chinese_information_extraction
+- 一种基于机器阅读理解的命名实体识别：https://github.com/taishan1994/BERT_MRC_NER_chinese
+- W2NER：命名实体识别最新sota：https://github.com/taishan1994/W2NER_predict
+
